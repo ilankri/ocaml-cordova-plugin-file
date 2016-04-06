@@ -1,5 +1,7 @@
 # ocaml-cordova-plugin-file
 
+* gen_js_api (master branch): [![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-file.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-file)
+
 Binding to
 [cordova-plugin-file](https://github.com/apache/cordova-plugin-file)
 
