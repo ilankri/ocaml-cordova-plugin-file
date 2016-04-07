@@ -67,12 +67,12 @@ See the official documentation
 The device plugin creates a new object called *cordova.file*, but the object is
 available when the *deviceready* event is handled.
 
-We provide a function *File_cordova.t* of type unit -> File_cordova.file which does the binding when you call it.
+We provide a function *Cordova_file.t* of type unit -> Cordova_file.file which does the binding when you call it.
 So, use (with js_of_ocaml)
 
 ```OCaml
 let on_device_ready =
-  let a = File_cordova.t () in
+  let a = Cordova_file.t () in
   (* Some code *)
 
 let _ =

@@ -1,1 +1,1 @@
-let t = File_cordova.t () in t#application_directory
+let t = Cordova_file.t () in t#application_directory
