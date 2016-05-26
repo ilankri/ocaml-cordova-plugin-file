@@ -62,21 +62,3 @@ See the official documentation
 
 * Allow to use methods which are available on the device depending on the
   operating system.
-
-## ! BE CAREFUL !
-
-The device plugin creates a new object called *cordova.file*, but the object is
-available when the *deviceready* event is handled.
-
-We provide a function *Cordova_file.t* of type unit -> Cordova_file.file which does the binding when you call it.
-So, use (with js_of_ocaml)
-
-```OCaml
-let on_device_ready =
-  let a = Cordova_file.t () in
-  (* Some code *)
-
-let _ =
-  Dom.addEventListener Dom_html.document (Dom.Event.make "deviceready")
-  (Dom_html.handler on_device_ready) Js._false
-```
